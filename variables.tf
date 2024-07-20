@@ -3,12 +3,12 @@ variable "access_key" {}
 variable "secret_key" {}
 
 variable "region" {
-  default = "eu-west-1"
+  default = "us-west-1"
 }
 
 // Availability zones for the region
 variable "az1" {
-  default = "eu-west-1a"
+  default = "us-west-1a"
 }
 
 variable "vpccidr" {
@@ -47,7 +47,7 @@ variable "arch" {
 // c6g.xlarge is arm
 // For detail, refer to https://aws.amazon.com/ec2/instance-types/
 variable "size" {
-  default = "c5.xlarge"
+  default = "t3.small"
 }
 
 // AMIs for FGTVM-7.4.4
